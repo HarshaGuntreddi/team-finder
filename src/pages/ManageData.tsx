@@ -62,8 +62,8 @@ export function ManageData() {
           className={
             'flex items-center gap-2 rounded-xl border px-4 py-3 text-sm ' +
             (notice.kind === 'ok'
-              ? 'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300'
-              : 'border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-500/30 dark:bg-rose-500/10 dark:text-rose-300')
+              ? 'border-slate-200 bg-slate-50 text-slate-700 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-200'
+              : 'border-slate-900 bg-slate-900 text-white dark:border-white dark:bg-white dark:text-slate-900')
           }
         >
           {notice.kind === 'ok' ? <CheckCircle2 className="h-4 w-4" /> : <AlertCircle className="h-4 w-4" />}
@@ -150,7 +150,7 @@ export function ManageData() {
           <div className="mt-auto pt-6">
             <h4 className="mb-1 text-sm font-semibold text-slate-500">Reset</h4>
             <button
-              className="btn-outline !border-amber-300 !text-amber-700 hover:!bg-amber-50 dark:!border-amber-500/30 dark:!text-amber-300 dark:hover:!bg-amber-500/10"
+              className="btn-outline"
               onClick={() => {
                 if (confirm('Reset all data back to the built-in sample set? This clears your changes.')) {
                   resetToSample()
@@ -217,7 +217,7 @@ export function ManageData() {
                         <Pencil className="h-4 w-4" />
                       </button>
                       <button
-                        className="btn-ghost !px-2 !py-1.5 text-rose-600 hover:!bg-rose-50 dark:hover:!bg-rose-500/10"
+                        className="btn-ghost !px-2 !py-1.5"
                         onClick={() => {
                           if (confirm(`Remove ${e.name}?`)) deleteEmployee(e.id)
                         }}

@@ -73,8 +73,8 @@ export function Dashboard() {
     <div className="space-y-6">
       {/* Hero */}
       <div className="card overflow-hidden">
-        <div className="bg-gradient-to-r from-brand-600 to-indigo-600 px-6 py-7 text-white">
-          <h2 className="text-2xl font-extrabold">Welcome aboard! 👋</h2>
+        <div className="bg-gradient-to-r from-slate-900 to-slate-700 px-6 py-7 text-white">
+          <h2 className="text-2xl font-extrabold">Welcome aboard</h2>
           <p className="mt-1 max-w-2xl text-brand-50">
             Explore who works on what across the team. Head to <span className="font-semibold">Find My Team</span> to get
             matched with people whose skills fit what you need.

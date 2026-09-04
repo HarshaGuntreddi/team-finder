@@ -7,16 +7,16 @@ export function initials(name: string): string {
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
 }
 
-// Deterministic gradient for avatars, derived from the name.
+// Deterministic grayscale gradient for avatars, derived from the name.
 const AVATAR_GRADIENTS = [
-  'from-sky-500 to-indigo-500',
-  'from-fuchsia-500 to-purple-500',
-  'from-emerald-500 to-teal-500',
-  'from-amber-500 to-orange-500',
-  'from-rose-500 to-pink-500',
-  'from-cyan-500 to-blue-500',
-  'from-violet-500 to-indigo-500',
-  'from-lime-500 to-green-500',
+  'from-slate-700 to-slate-900',
+  'from-slate-500 to-slate-700',
+  'from-neutral-600 to-neutral-800',
+  'from-zinc-600 to-zinc-900',
+  'from-gray-500 to-gray-700',
+  'from-slate-800 to-slate-950',
+  'from-neutral-700 to-neutral-900',
+  'from-stone-600 to-stone-800',
 ]
 
 export function avatarGradient(seed: string): string {

@@ -51,7 +51,7 @@ export function EmployeeDrawer({ employee, onClose, onEdit, onDelete }: Props) {
               label="Email"
               value={
                 employee.email ? (
-                  <a className="text-brand-600 hover:underline dark:text-brand-300" href={`mailto:${employee.email}`}>
+                  <a className="font-medium text-slate-900 underline underline-offset-2 dark:text-white" href={`mailto:${employee.email}`}>
                     {employee.email}
                   </a>
                 ) : (
@@ -101,7 +101,7 @@ export function EmployeeDrawer({ employee, onClose, onEdit, onDelete }: Props) {
             <Pencil className="h-4 w-4" /> Edit
           </button>
           <button
-            className="btn-outline !border-rose-200 !text-rose-600 hover:!bg-rose-50 dark:!border-rose-500/30 dark:hover:!bg-rose-500/10"
+            className="btn-outline"
             onClick={() => onDelete(employee)}
           >
             <Trash2 className="h-4 w-4" />

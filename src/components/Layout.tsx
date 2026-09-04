@@ -34,7 +34,7 @@ function NavItems({ onNavigate }: { onNavigate?: () => void }) {
             cn(
               'flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium transition-colors',
               isActive
-                ? 'bg-brand-600 text-white shadow-sm'
+                ? 'bg-slate-900 text-white shadow-sm dark:bg-white dark:text-slate-900'
                 : 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800',
             )
           }

@@ -111,7 +111,7 @@ export function EmployeeForm({ initial, onSubmit, onCancel }: Props) {
         />
       </div>
 
-      {error && <p className="text-sm font-medium text-rose-600">{error}</p>}
+      {error && <p className="text-sm font-semibold text-slate-900 dark:text-white">{error}</p>}
 
       <div className="flex justify-end gap-2 pt-2">
         <button type="button" className="btn-outline" onClick={onCancel}>
